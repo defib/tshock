@@ -1,6 +1,6 @@
 FROM centos:latest
 
-MAINTAINER silvertoken <silvertoken99@gmail.com>
+MAINTAINER lpe672 <fajamushi@gmail.com>
 
 # Add mono repository
 # Update and install mono
@@ -19,7 +19,7 @@ RUN yum install -y \
 COPY start.sh /start
 
 # Download and install TShock
-ENV TSHOCK_VERSION=4.3.23
+ENV TSHOCK_VERSION=4.3.24
 
 RUN mkdir /world /config /logs /plugins /tshock && \
 	cd /tshock && \
